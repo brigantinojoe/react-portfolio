@@ -8,13 +8,13 @@ const style = {
   },
   items: {
     paddingTop: '15px',
-    fontSize: '15px',
+    fontSize: '20px',
   }
 };
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-pills nav-justified navbar-expand-lg" style={style.navbar}>
+    <ul className="nav nav-justified navbar-expand-lg" style={style.navbar}>
       <li className="nav-item" style={style.items}>
         <a
           href="#aboutme"
