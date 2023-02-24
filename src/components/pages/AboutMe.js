@@ -15,7 +15,7 @@ const styles = {
 export default function AboutMe() {
   return (
     <div style={styles.profile}>
-      <img src='./Pic.jpg' alt='profile-picture'></img>
+      <img src='./Pic.jpg' alt='profile'></img>
       <div style={styles.descriptionContainer}>
         <h1>Joe Brigantino</h1>
         <p>
