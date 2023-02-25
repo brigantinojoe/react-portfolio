@@ -20,6 +20,7 @@ const style = {
 export default function Contact() {
 
   const validateText = (value) => value === "" ? false : true;
+  // eslint-disable-next-line
   const validateEmail = (value) => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value) ? true : false;
   const blockStyle = (element) => element.style = "display: block";
   const noStyle = (element) => element.style = "display: none";
@@ -27,22 +28,38 @@ export default function Contact() {
   const validateFormName = function () {
     const inputArray = document.querySelectorAll(".form-control");
     const errorElement = document.querySelectorAll(".error-message")[0];
+    // eslint-disable-next-line
     const name = validateText(inputArray[0].value) === true ? noStyle(errorElement) : blockStyle(errorElement);
   };
 
   const validateFormEmail = function () {
     const inputArray = document.querySelectorAll(".form-control");
     const errorElement = document.querySelectorAll(".error-message")[1];
+    // eslint-disable-next-line
     const email = validateEmail(inputArray[1].value) === true ? noStyle(errorElement) : blockStyle(errorElement);
   };
 
   const validateFormMessage = function () {
     const inputArray = document.querySelectorAll(".form-control");
     const errorElement = document.querySelectorAll(".error-message")[2];
+    // eslint-disable-next-line
     const message = validateText(inputArray[2].value) === true ? noStyle(errorElement) : blockStyle(errorElement);
   };
 
-  const resetForm = () => document.querySelector('.form-container').reset();
+  const resetForm = function () {
+    const inputArray = document.querySelectorAll(".form-control");
+    const errorArray = document.querySelectorAll(".error-message");
+    // eslint-disable-next-line
+    const resetDisplay = errorArray.forEach((element) => element.style = "display: none;");
+    const blockStyle = (element) => element.style = "display: block";
+    const name = validateText(inputArray[0].value) === true ? false : blockStyle(errorArray[0]);
+    const email = validateEmail(inputArray[1].value) === true ? false : blockStyle(errorArray[1]);
+    const message = validateText(inputArray[2].value) === true ? false : blockStyle(errorArray[2]);
+
+    if (!name && !email && !message) {
+      document.querySelector('.form-container').reset();
+    }
+  };
 
   return (
     <div style={style.div}>
