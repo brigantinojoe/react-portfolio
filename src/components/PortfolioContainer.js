@@ -6,7 +6,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About Me');
 
   useEffect(() => {
     document.title = 'Joe Brigantino';
