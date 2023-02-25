@@ -1,17 +1,78 @@
 import React from 'react';
 
 export default function Portfolio() {
-  return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
-  );
+
+  const style = {
+    layout: {
+      display: "flex",
+      width: "100%",
+      flexDirection: "row",
+      flexWrap: "wrap",
+      justifyContent: "center",
+    },
+    images: {
+      width: "90%",
+      height: "90%",
+      margin: "50px",
+      aspectRatio: "3/2",
+      objectFit: "contain"
+  },
+    github: {
+      height: "21px",
+      width: "18x",
+      position: "relative",
+      marginTop: "-200px",
+      paddingLeft: "65px",
+      marginBottom: "0px"
+    },
+    title: {
+      position: "relative",
+      marginTop: "-135px",
+      paddingLeft: "250px",
+      marginBottom: "0px"
+    },
+    link: {
+      height: "21px",
+      width: "18x",
+      padding: "50px"
+    }
+}
+
+return (
+  <div>
+    <h1 style={{ width: "100%" }}><center>Portfolio</center></h1>
+    <section style={style.layout}>
+      <div>
+        <img src='./library.jpg' alt='library' style={style.images}></img>
+        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
+      </div>
+      <div>
+        <img src='./blog.jpg' alt='blog' style={style.images}></img>
+        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
+      </div>
+      <div>
+        <img src='./quiz.jpg' alt='quiz' style={style.images}></img>
+        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
+      </div>
+      <div>
+        <img src='./weather.jpg' alt='weather' style={style.images}></img>
+        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
+      </div>
+      <div>
+        <img src='./notes.jpg' alt='notes' style={style.images}></img>
+        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
+      </div>
+      <div>
+        <img src='./text-editor.jpg' alt='editor' style={style.images}></img>
+        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
+      </div>
+    </section>
+  </div>
+);
 }
