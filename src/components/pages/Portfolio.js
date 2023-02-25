@@ -2,6 +2,11 @@ import React from 'react';
 
 export default function Portfolio() {
 
+  const openLink = (event) => {
+    const arrayIndex = event.target.getAttribute("value");
+    window.open("https://www.w3schools.com", '_blank');
+  }
+
   const style = {
     layout: {
       display: "flex",
@@ -21,15 +26,16 @@ export default function Portfolio() {
       height: "21px",
       width: "18x",
       position: "relative",
-      marginTop: "-200px",
-      paddingLeft: "65px",
+      marginTop: "-275px",
+      paddingLeft: "100px",
       marginBottom: "0px"
     },
     title: {
       position: "relative",
-      marginTop: "-135px",
-      paddingLeft: "250px",
-      marginBottom: "0px"
+      marginTop: "-125px",
+      paddingLeft: "75px",
+      marginBottom: "0px",
+      width: "50px"
     },
     link: {
       height: "21px",
@@ -44,32 +50,32 @@ return (
     <section style={style.layout}>
       <div>
         <img src='./library.jpg' alt='library' style={style.images}></img>
-        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <img src='./github-mark-white.png' alt='test' style={style.github} value="0" onClick={openLink}></img>
         <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
       </div>
       <div>
         <img src='./blog.jpg' alt='blog' style={style.images}></img>
-        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
-        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
+        <img src='./github-mark.jpg' alt='test' style={style.github} onClick={openLink}></img>
+        <p style={{...style.title, color: "#18122B"}}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
       </div>
       <div>
         <img src='./quiz.jpg' alt='quiz' style={style.images}></img>
-        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
         <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
       </div>
       <div>
         <img src='./weather.jpg' alt='weather' style={style.images}></img>
-        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
         <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
       </div>
       <div>
         <img src='./notes.jpg' alt='notes' style={style.images}></img>
-        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
         <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
       </div>
       <div>
         <img src='./text-editor.jpg' alt='editor' style={style.images}></img>
-        <p><a href="https://www.w3schools.com"><img src='./github-mark-white.png' alt='test' style={style.github}></img> </a></p>
+        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
         <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
       </div>
     </section>
