@@ -63,7 +63,6 @@ export default function Contact() {
 
   return (
     <div style={style.div}>
-      <h1><center>Contact</center></h1>
       <center><form style={style.formContainer} className="form-container">
         <div className="form-group" style={style.inputForms}>
           <label>Name:</label>

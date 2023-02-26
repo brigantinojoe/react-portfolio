@@ -50,7 +50,6 @@ export default function Portfolio() {
 
   return (
     <div>
-      <h1 style={{ width: "100%" }}><center>Portfolio</center></h1>
       <section style={style.layout}>
         <div>
           <img src='./library.jpg' alt='library' style={style.images}></img>

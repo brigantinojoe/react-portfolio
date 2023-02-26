@@ -12,6 +12,14 @@ export default function PortfolioContainer() {
     document.title = 'Joe Brigantino';
   }, []);
 
+  const renderHeader = () => {
+    if (currentPage === 'About Me') {
+      return <h1 style={{ width: "100%" }}><center>About Me</center></h1>;
+    } else {
+      return <h1 style={{ width: "100%" }}><center>{currentPage}</center></h1>;
+    }
+  };
+
   const renderPage = () => {
     if (currentPage === 'About Me') {
       return <AboutMe />;
@@ -33,6 +41,7 @@ export default function PortfolioContainer() {
   return (
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderHeader()}
       {renderPage()}
     </div>
   );

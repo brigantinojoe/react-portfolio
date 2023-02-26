@@ -9,12 +9,11 @@ export default function Resume() {
     container: {
       marginLeft: "50px",
       marginTop: "25px"
-    }
+    },
   }
   return (
     <div>
       <div style={style.container}>
-        <h1>Resume</h1>
         <br></br>
         <h2>Front-end Proficiencies</h2>
         <ul>
