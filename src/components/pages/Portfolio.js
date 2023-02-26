@@ -32,12 +32,13 @@ export default function Portfolio() {
       objectFit: "contain"
     },
     github: {
-      height: "21px",
-      width: "18x",
+      height: "31px",
+      width: "28x",
       position: "relative",
       marginTop: "-275px",
       paddingLeft: "100px",
-      marginBottom: "0px"
+      marginBottom: "0px",
+      cursor: "pointer"
     },
     title: {
       position: "relative",
