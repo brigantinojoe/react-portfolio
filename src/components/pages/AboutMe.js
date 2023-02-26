@@ -8,7 +8,7 @@ const styles = {
   },
   descriptionContainer: {
     margin: "auto",
-    padding: "10px"
+    padding: "40px"
   },
 }
 
