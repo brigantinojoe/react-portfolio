@@ -2,9 +2,18 @@ import React from 'react';
 
 export default function Portfolio() {
 
+  const githubArray = ["https://github.com/DallasSybrowsky/Bibliomania",
+    "https://github.com/brigantinojoe/blog",
+    "https://github.com/brigantinojoe/quiz",
+    "https://github.com/brigantinojoe/weather_App",
+    "https://github.com/brigantinojoe/note_taker",
+    "https://github.com/brigantinojoe/text-editor"
+  ];
+
   const openLink = (event) => {
     const arrayIndex = event.target.getAttribute("value");
-    window.open("https://www.w3schools.com", '_blank');
+    const link = githubArray[arrayIndex];
+    window.open(link, '_blank');
   }
 
   const style = {
@@ -21,7 +30,7 @@ export default function Portfolio() {
       margin: "50px",
       aspectRatio: "3/2",
       objectFit: "contain"
-  },
+    },
     github: {
       height: "21px",
       width: "18x",
@@ -35,50 +44,44 @@ export default function Portfolio() {
       marginTop: "-125px",
       paddingLeft: "75px",
       marginBottom: "0px",
-      width: "50px"
     },
-    link: {
-      height: "21px",
-      width: "18x",
-      padding: "50px"
-    }
-}
+  }
 
-return (
-  <div>
-    <h1 style={{ width: "100%" }}><center>Portfolio</center></h1>
-    <section style={style.layout}>
-      <div>
-        <img src='./library.jpg' alt='library' style={style.images}></img>
-        <img src='./github-mark-white.png' alt='test' style={style.github} value="0" onClick={openLink}></img>
-        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
-      </div>
-      <div>
-        <img src='./blog.jpg' alt='blog' style={style.images}></img>
-        <img src='./github-mark.jpg' alt='test' style={style.github} onClick={openLink}></img>
-        <p style={{...style.title, color: "#18122B"}}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
-      </div>
-      <div>
-        <img src='./quiz.jpg' alt='quiz' style={style.images}></img>
-        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
-        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
-      </div>
-      <div>
-        <img src='./weather.jpg' alt='weather' style={style.images}></img>
-        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
-        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
-      </div>
-      <div>
-        <img src='./notes.jpg' alt='notes' style={style.images}></img>
-        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
-        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
-      </div>
-      <div>
-        <img src='./text-editor.jpg' alt='editor' style={style.images}></img>
-        <img src='./github-mark-white.png' alt='test' style={style.github} onClick={openLink}></img>
-        <p style={style.title}><a href="https://www.w3schools.com"> </a>BiblioMania</p>
-      </div>
-    </section>
-  </div>
-);
+  return (
+    <div>
+      <h1 style={{ width: "100%" }}><center>Portfolio</center></h1>
+      <section style={style.layout}>
+        <div>
+          <img src='./library.jpg' alt='library' style={style.images}></img>
+          <img src='./github-mark-white.png' alt='test' style={style.github} value="0" onClick={openLink}></img>
+          <p style={style.title}><a href="https://bibliomania.herokuapp.com/" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">BiblioMania</a></p>
+        </div>
+        <div>
+          <img src='./blog.jpg' alt='blog' style={style.images}></img>
+          <img src='./github-mark.jpg' alt='test' style={style.github} value="1" onClick={openLink}></img>
+          <p style={{ ...style.title, color: "#18122B" }}><a href="https://warm-lake-10819.herokuapp.com/signup" style={{ textDecoration: "none", color: "black", }} target="_blank" rel="noreferrer">Blog App</a></p>
+        </div>
+        <div>
+          <img src='./quiz.jpg' alt='quiz' style={style.images}></img>
+          <img src='./github-mark-white.png' alt='test' style={style.github} value="2" onClick={openLink}></img>
+          <p style={style.title}><a href="https://brigantinojoe.github.io/quiz/index.html" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">The Office Quiz</a></p>
+        </div>
+        <div>
+          <img src='./weather.jpg' alt='weather' style={style.images}></img>
+          <img src='./github-mark-white.png' alt='test' style={style.github} value="3" onClick={openLink}></img>
+          <p style={style.title}><a href="https://brigantinojoe.github.io/weather_App/" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">Weather App</a></p>
+        </div>
+        <div>
+          <img src='./notes.jpg' alt='notes' style={style.images}></img>
+          <img src='./github-mark-white.png' alt='test' style={style.github} value="4" onClick={openLink}></img>
+          <p style={style.title}><a href="https://pacific-lake-49990.herokuapp.com/notes" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">Note Taker</a></p>
+        </div>
+        <div>
+          <img src='./text-editor.jpg' alt='editor' style={style.images}></img>
+          <img src='./github-mark-white.png' alt='test' style={style.github} value="5" onClick={openLink}></img>
+          <p style={style.title}><a href="https://rocky-inlet-02168.herokuapp.com/" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">Text Editor</a></p>
+        </div>
+      </section>
+    </div>
+  );
 }
