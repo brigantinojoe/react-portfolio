@@ -8,11 +8,10 @@ I built this portfolio project to demonstrate my ability to create responsive an
 To build this project, I used a combination of HTML, CSS, JavaScript, and React.js. I started by creating wireframes and designing the layout and user interface of the website using Google Slides. Then, I used React.js to build the front-end of the website, incorporating various libraries and frameworks. Finally, I deployed the website using GitHub pages, making it easily accessible to anyone who wants to view it. Overall, this project allowed me to showcase my front-end development skills and highlight my previous projects and experiences in an elegant and professional manner.
 
 ## Installation
-There is no installation necessary, please go to [this website](google.com).
+There is no installation necessary, please go to [this website](https://brigantinojoe.github.io/react-portfolio/).
 
 ## Usage
-Provide instructions and examples for use. Include screenshots as needed.
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+1. Visit the production website [here](https://brigantinojoe.github.io/react-portfolio/).
+2. Click the navigation links at the top of the screen to move to the different react rendered pages of the site.
+3. In the portfolio page, click the github icon to navigate to the GitHub repository for that project. You can also click the project title to navigate to the production web apps.
+4. Enjoy!
