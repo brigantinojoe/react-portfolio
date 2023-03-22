@@ -7,7 +7,7 @@ export default function Portfolio() {
     "https://github.com/brigantinojoe/quiz",
     "https://github.com/brigantinojoe/weather_App",
     "https://github.com/brigantinojoe/note_taker",
-    "https://github.com/brigantinojoe/text-editor"
+    "https://github.com/brigantinojoe/react-portfolio/tree/main"
   ];
 
   const openLink = (event) => {
@@ -77,7 +77,7 @@ export default function Portfolio() {
           <p style={style.title}><a href="https://pacific-lake-49990.herokuapp.com/notes" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">Note Taker</a></p>
         </div>
         <div>
-          <img src='./text-editor.jpg' alt='editor' style={style.images}></img>
+          <img src='./codecollab.jpg' alt='editor' style={style.images}></img>
           <img src='./github-mark-white.png' alt='test' style={style.github} value="5" onClick={openLink}></img>
           <p style={style.title}><a href="https://rocky-inlet-02168.herokuapp.com/" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">Text Editor</a></p>
         </div>
