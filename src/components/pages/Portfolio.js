@@ -7,7 +7,7 @@ export default function Portfolio() {
     "https://github.com/brigantinojoe/quiz",
     "https://github.com/brigantinojoe/weather_App",
     "https://github.com/brigantinojoe/note_taker",
-    "https://github.com/brigantinojoe/react-portfolio/tree/main"
+    "https://github.com/DallasSybrowsky/CodeCollab"
   ];
 
   const openLink = (event) => {
