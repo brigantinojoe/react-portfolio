@@ -79,7 +79,7 @@ export default function Portfolio() {
         <div>
           <img src='./codecollab.jpg' alt='editor' style={style.images}></img>
           <img src='./github-mark-white.png' alt='test' style={style.github} value="5" onClick={openLink}></img>
-          <p style={style.title}><a href="https://rocky-inlet-02168.herokuapp.com/" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">Text Editor</a></p>
+          <p style={style.title}><a href="https://code-collab-dallas.herokuapp.com/" style={{ textDecoration: "none", color: "white", }} target="_blank" rel="noreferrer">CodeCollab</a></p>
         </div>
       </section>
     </div>
